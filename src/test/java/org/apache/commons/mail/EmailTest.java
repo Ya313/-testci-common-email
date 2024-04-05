@@ -257,7 +257,6 @@ public class EmailTest {
     public void testGetMailSessionWithoutHostname() throws EmailException {
         email.getMailSession();
     }
-    
     @Test
     public void testGetMailSessionSSL_CheckServerIdentity() throws EmailException {
         email.setHostName("smtp.example.com");
