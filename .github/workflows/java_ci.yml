@@ -21,6 +21,6 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: test-reports
-        path: target/surefire-reports
+        path: -testci-common-email/target/surefire-reports
 
 
