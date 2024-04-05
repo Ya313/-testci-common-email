@@ -116,7 +116,7 @@ public class EmailTest {
      * Test the buildMimeMessage() function
      */
     @Test
-    // Test that insures that buildmimemessage is working successfully
+    // Test that insures that BuildMimemessage is working successfully
     public void testBuildMimeMessageSuccessfully() throws Exception {
         email.buildMimeMessage();
         MimeMessage message = email.getMimeMessage();
