@@ -16,5 +16,11 @@ jobs:
     - name: Build with Maven
       run: mvn clean test
     - name: Run tests
-      run: mvn test -e
+      run: mvn test
+    - name: Archive test reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-reports
+        path: target/surefire-reports
+
 
