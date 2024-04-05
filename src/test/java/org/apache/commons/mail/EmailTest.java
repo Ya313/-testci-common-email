@@ -152,7 +152,7 @@ public class EmailTest {
     }
     
     @Test
-    // Insures that buildmimemessage works successfully with the addition of CC 
+    // Insures that BuildMimemessage works successfully with the addition of CC 
     public void testBuildMimeMessageWithCC() throws Exception {
         email.setFrom("test@example.com");
         email.addTo(TEST_EMAILS);
