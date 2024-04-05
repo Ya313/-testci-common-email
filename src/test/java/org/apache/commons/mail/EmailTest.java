@@ -165,7 +165,7 @@ public class EmailTest {
     }
 
     @Test
- // Insures that buildmimemessage works successfully with the addition of CC 
+ // Insures that BuildMimemessage works successfully with the addition of CC 
     public void testBuildMimeMessageWithBCC() throws Exception {
         email.setFrom("test@example.com");
         email.addTo(TEST_EMAILS);
@@ -178,7 +178,7 @@ public class EmailTest {
     }
 
     @Test
- // Insures that buildmimemessage works successfully with the addition of the ReplyToList
+ // Insures that BuildMimemessage works successfully with the addition of the ReplyToList
     public void testBuildMimeMessageWithReplyToList() throws Exception {
         email.setFrom("test@example.com");
         email.addTo(TEST_EMAILS);
@@ -192,7 +192,7 @@ public class EmailTest {
     }
 
     @Test
- // Insures that buildmimemessage works successfully with the addition of multiple headers
+ // Insures that BuildMimemessage works successfully with the addition of multiple headers
     public void testBuildMimeMessageWithHeaders() throws Exception {
         email.setFrom("test@example.com");
         email.addTo(TEST_EMAILS);
