@@ -251,7 +251,12 @@ public class EmailTest {
         assertNotNull(session); // Verify that the session is not null
         assertEquals("smtp.example.com", session.getProperty("mail.smtp.host"));
     }
-    
+
+    @Test(expected = EmailException.class)
+    //Insures that GetMailSession throws an exception when there isn't a host name 
+    public void testGetMailSessionWithoutHostname() throws EmailException {
+        email.getMailSession();
+    }
     @Test
     public void testGetMailSessionSSL_CheckServerIdentity() throws EmailException {
         email.setHostName("smtp.example.com");
